@@ -1,0 +1,12 @@
+.rounded-image {
+    filter: drop-shadow(0 0 5rem rgba(0, 0, 0, 0.75));
+    height: 100%;
+stroke: 2;
+}
+
+.image-frame{
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 150px;
+    height: 150px;
+    border: 1px solid #0000;
+}

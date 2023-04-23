@@ -1,0 +1,12 @@
+.business-hours__list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.regularday{
+}
+.currentday{
+    font-weight: bold;
+    text-decoration: underline;
+    color: var(--color-bg-three);
+}

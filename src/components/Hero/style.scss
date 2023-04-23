@@ -1,0 +1,49 @@
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  min-height: 100vrh;
+  max-width: var(--size-max);
+  min-height: 100vh;
+
+  h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: normal;
+    position: relative;
+    z-index: 2;
+    margin-top: 1.5rem;
+    text-shadow: .25rem .25rem .5rem rgba(0,0,0,.25);
+
+    &::after {
+      content: 'Webentwickler';
+      text-transform: uppercase;
+      position: absolute;
+      left: 10%;
+      top: 3rem;
+      color: rgba(0,0,0,.25);
+      z-index: -1;
+      text-shadow: none;
+    }
+  }
+
+
+
+  .hero-section__left {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-grow: 1;
+  }
+
+  .hero-section__right {
+    display: flex;
+    align-items: center;
+  }
+
+  .hero-section__right svg {
+    max-height: 33vh;
+  }
+}

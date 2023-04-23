@@ -4,25 +4,92 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: rgba(255, 255, 255, 0.7);
+  background-color: #393939;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  --color-bg-one: hsl(212, 81%, 28%);
+  --color-bg-two: hsl(212, 81%, 58%);
+  --color-bg-three: hsl(42, 100%, 69%);
+  --color-accent-1: var(--color-bg-three);
+
+  --color-dark-1: #212121;
+
+	--mobile-breakpoint: 567px;
+	--tablet-breakpoint: 900px;
+  --size-max: 980px;
 }
 
+* {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
+  padding: 0;
   min-width: 320px;
+  min-height: 100vh;
+  background: linear-gradient(112deg, var(--color-bg-one) 12%, var(--color-bg-two) 70% , var(--color-bg-three) 70%);
+}
+
+
+/* APP SECTION */
+
+.app {
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
 }
 
-h1{
-  color: white;
+.app-logo{
+  max-height: 2rem;
+  
+}
+
+/* HEADER */
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+
+/* NAV */
+
+.main-nav{
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: var(--color-dark-1);
+  margin: .75rem;
+  padding: .75rem 1rem;
+  gap: 1rem;
+  border-radius: .5rem;
+  cursor: pointer;
+}
+
+/* MAIN */
+
+.app-content {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  flex-grow: 1;
+  width: 100%;
+  justify-content: center;
+}
+
+
+/* FOOTER  */
+.app-footer {
+  background-color: var(--color-dark-1);
 }
